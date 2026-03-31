@@ -1,0 +1,10 @@
+name=Air Time
+author=The Toymakers
+description=Torchy's endless gravity run! Flip gravity, dodge obstacles, and solve pipe puzzles in slow-mo Air Time.
+bundleID=com.thetoymakers.airtime
+version=1.0.0
+buildNumber=1
+imagePath=images/
+launchSoundPath=
+contentWarning=
+contentWarning2=

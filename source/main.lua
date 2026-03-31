@@ -9,10 +9,10 @@ import "CoreLibs/crank"
 
 local gfx = playdate.graphics
 
--- Import game modules
-local Game = import "game"
-local Menu = import "menu"
-local HighScore = import "highscore"
+-- Import game modules (Playdate import makes globals available)
+import "game"
+import "menu"
+import "highscore"
 
 -- App states
 local APP_STATE_TITLE = "title"

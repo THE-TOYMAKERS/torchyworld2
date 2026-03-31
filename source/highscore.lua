@@ -1,6 +1,6 @@
 -- highscore.lua - High score persistence
 
-local HighScore = {}
+HighScore = {}
 
 local SAVE_KEY = "airtime_highscore"
 local SAVE_KEY_REGION = "airtime_highest_region"
@@ -55,5 +55,3 @@ function HighScore.reset()
     HighScore.highestRegion = 1
     HighScore.save()
 end
-
-return HighScore

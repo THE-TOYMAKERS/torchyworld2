@@ -1,6 +1,6 @@
 -- regions.lua - Region/biome definitions and difficulty scaling
 
-local Regions = {}
+Regions = {}
 
 Regions.definitions = {
     {
@@ -133,5 +133,3 @@ function Regions.getNextRegionDistance(currentDistance)
     local idx, region = Regions.getRegionForDistance(currentDistance)
     return region.endDistance
 end
-
-return Regions

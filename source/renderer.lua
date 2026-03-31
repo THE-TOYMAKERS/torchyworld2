@@ -1,8 +1,8 @@
 -- renderer.lua - Pseudo-3D corridor rendering with forced perspective
 
-local Utils = import "utils"
+import "utils"
 
-local Renderer = {}
+Renderer = {}
 
 -- Screen dimensions
 Renderer.SCREEN_W = 400
@@ -418,5 +418,3 @@ function Renderer.drawRampIndicator(progress)
     gfx.setFont(font)
     gfx.drawTextAligned("AIR TIME", Renderer.SCREEN_W / 2, by - 12, kTextAlignment.center)
 end
-
-return Renderer

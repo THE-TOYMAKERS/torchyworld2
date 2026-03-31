@@ -1,9 +1,9 @@
 -- obstacles.lua - Obstacle generation and management
 
-local Utils = import "utils"
-local Regions = import "regions"
+import "utils"
+import "regions"
 
-local Obstacles = {}
+Obstacles = {}
 
 -- Obstacle pool
 Obstacles.active = {}
@@ -196,5 +196,3 @@ end
 function Obstacles.setLastRampDistance(d)
     Obstacles.lastRampDistance = d
 end
-
-return Obstacles

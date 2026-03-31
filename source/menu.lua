@@ -1,8 +1,8 @@
 -- menu.lua - Title screen, death screen, high score boom screen
 
-local Utils = import "utils"
+import "utils"
 
-local Menu = {}
+Menu = {}
 
 local SCREEN_W = 400
 local SCREEN_H = 240
@@ -293,5 +293,3 @@ function Menu.reset()
     Menu.animTimer = 0
     Menu.selectedOption = 1
 end
-
-return Menu

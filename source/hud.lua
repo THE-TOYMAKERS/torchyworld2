@@ -1,8 +1,8 @@
 -- hud.lua - HUD rendering, score display, distance counter
 
-local Utils = import "utils"
+import "utils"
 
-local HUD = {}
+HUD = {}
 
 local SCREEN_W = 400
 local SCREEN_H = 240
@@ -129,5 +129,3 @@ end
 function HUD.reset()
     HUD.init()
 end
-
-return HUD

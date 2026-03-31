@@ -1,6 +1,6 @@
 -- utils.lua - Utility functions for Air Time
 
-local Utils = {}
+Utils = {}
 
 function Utils.lerp(a, b, t)
     return a + (b - a) * t
@@ -67,4 +67,4 @@ function Utils.drawDashedLine(x1, y1, x2, y2, dashLen, gapLen)
     end
 end
 
-return Utils
+-- Playdate import: global table, no return needed

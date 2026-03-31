@@ -1,8 +1,8 @@
 -- airtime.lua - Air Time slow-mo pipe puzzle mini-game
 
-local Utils = import "utils"
+import "utils"
 
-local AirTime = {}
+AirTime = {}
 
 -- Pipe states: each pipe can be in one of 4 rotations (0, 1, 2, 3)
 -- Rotation 0 = horizontal (aligned/solved)
@@ -379,5 +379,3 @@ end
 function AirTime.reset()
     AirTime.init()
 end
-
-return AirTime

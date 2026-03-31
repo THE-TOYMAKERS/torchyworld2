@@ -1,15 +1,15 @@
 -- game.lua - Core game loop / run state
 
-local Utils = import "utils"
-local Renderer = import "renderer"
-local Player = import "player"
-local Obstacles = import "obstacles"
-local Regions = import "regions"
-local AirTime = import "airtime"
-local HUD = import "hud"
-local HighScore = import "highscore"
+import "utils"
+import "renderer"
+import "player"
+import "obstacles"
+import "regions"
+import "airtime"
+import "hud"
+import "highscore"
 
-local Game = {}
+Game = {}
 
 -- Game states
 Game.STATE_RUNNING = "running"
@@ -205,5 +205,3 @@ end
 function Game.reset()
     Game.init()
 end
-
-return Game

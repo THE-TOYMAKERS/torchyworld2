@@ -1,8 +1,8 @@
 -- player.lua - Torchy character with gravity flip mechanics
 
-local Utils = import "utils"
+import "utils"
 
-local Player = {}
+Player = {}
 
 -- States
 Player.STATE_RUNNING = "running"
@@ -130,5 +130,3 @@ end
 function Player.reset()
     Player.init()
 end
-
-return Player

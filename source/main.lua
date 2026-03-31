@@ -6,6 +6,7 @@ import "CoreLibs/graphics"
 import "CoreLibs/sprites"
 import "CoreLibs/timer"
 import "CoreLibs/crank"
+import "CoreLibs/ui"
 
 local gfx = playdate.graphics
 
@@ -55,8 +56,10 @@ function updateTitle()
         startGame()
     end
 
-    -- Show crank indicator on title
-    playdate.ui.crankIndicator:update()
+    -- Show crank indicator on title (safe check)
+    if playdate.ui and playdate.ui.crankIndicator then
+        playdate.ui.crankIndicator:update()
+    end
 end
 
 function startGame()
